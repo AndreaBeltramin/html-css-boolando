@@ -16,6 +16,11 @@ img {
 	max-width: 100%;
 }
 
+li {
+	list-style-type: none;
+	display: inline-block;
+}
+
 /*HEADER*/
 
 .header-container {
@@ -44,6 +49,7 @@ img {
 	align-content: center;
 	justify-content: center;
 	gap: 2rem;
+	margin: 50px auto;
 }
 
 .products .product-card {
@@ -94,4 +100,17 @@ img {
 	position: absolute;
 	bottom: 23%;
 	left: 0%;
+}
+
+/*FOOTER*/
+
+.footer-container {
+	background-color: black;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-item {
+	color: white;
 }
