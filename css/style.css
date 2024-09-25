@@ -19,17 +19,30 @@ img {
 li {
 	list-style-type: none;
 	display: inline-block;
+	padding-right: 15px;
+}
+
+i {
+	padding-right: 10px;
+}
+
+.marca {
+	font-size: 0.9rem;
+}
+
+.descrizione {
+	font-size: 1rem;
+	font-weight: bold;
 }
 
 /*HEADER*/
-
 .header-container {
 	background-color: rgb(255, 105, 0);
 	height: 80px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 0 80px;
+	padding: 0 110px;
 }
 
 .header-item {
@@ -41,6 +54,7 @@ li {
 .header-logo {
 	height: 21.6px;
 }
+
 /*MAIN*/
 
 .products > .container {
@@ -90,16 +104,63 @@ li {
 .costo {
 	display: flex;
 }
+
 .costo-scontato {
 	color: red;
 	margin-right: 10px;
 	font-weight: bold;
 }
 
+.costo-reale {
+	color: red;
+}
+
 .sostenibilità:only-child {
 	position: absolute;
 	bottom: 23%;
 	left: 0%;
+}
+
+.product-card .product-image .add-to-cart {
+	display: none;
+	background-image: url(../img/1b.webp);
+	height: 440.83px;
+	background-size: contain;
+}
+
+.product-card:hover .product-image .add-to-cart {
+	display: block;
+}
+.product-card:hover .product-image .levis {
+	display: none;
+}
+
+.product-card .product-guess .guess-cart {
+	display: none;
+	background-image: url(../img/2b.webp);
+	height: 440.83px;
+	background-size: contain;
+}
+
+.product-card:hover .product-guess .guess-cart {
+	display: block;
+}
+.product-card:hover .product-guess .guess {
+	display: none;
+}
+
+.product-card .product-pastello .add-pastello {
+	display: none;
+	background-image: url(../img/3b.webp);
+	height: 440.83px;
+	background-size: contain;
+}
+
+.product-card:hover .product-pastello .add-pastello {
+	display: block;
+}
+.product-card:hover .product-pastello .pastello {
+	display: none;
 }
 
 /*FOOTER*/
@@ -109,8 +170,15 @@ li {
 	height: 100px;
 	display: flex;
 	justify-content: space-around;
+	padding: 30px 30px;
 }
 
 .footer-item {
 	color: white;
+	padding-bottom: 10px;
+}
+
+.Boolando {
+	font-weight: bold;
+	font-size: 1.3rem;
 }
