@@ -121,17 +121,17 @@ i {
 	left: 0%;
 }
 
-.product-card .product-image .add-to-cart {
+.product-card .product-levis .add-levis {
 	display: none;
 	background-image: url(../img/1b.webp);
 	height: 440.83px;
 	background-size: contain;
 }
 
-.product-card:hover .product-image .add-to-cart {
+.product-card:hover .product-levis .add-levis {
 	display: block;
 }
-.product-card:hover .product-image .levis {
+.product-card:hover .product-levis .levis {
 	display: none;
 }
 
@@ -160,6 +160,48 @@ i {
 	display: block;
 }
 .product-card:hover .product-pastello .pastello {
+	display: none;
+}
+
+.product-card .product-levis-red .add-levis-red {
+	display: none;
+	background-image: url(../img/4b.webp);
+	height: 440.83px;
+	background-size: contain;
+}
+
+.product-card:hover .product-levis-red .add-levis-red {
+	display: block;
+}
+.product-card:hover .product-levis-red .levis-red {
+	display: none;
+}
+
+.product-card .product-maya .add-maya {
+	display: none;
+	background-image: url(../img/5b.webp);
+	height: 440.83px;
+	background-size: contain;
+}
+
+.product-card:hover .product-maya .add-maya {
+	display: block;
+}
+.product-card:hover .product-maya .maya {
+	display: none;
+}
+
+.product-card .product-esprit .add-esprit {
+	display: none;
+	background-image: url(../img/6b.webp);
+	height: 440.83px;
+	background-size: contain;
+}
+
+.product-card:hover .product-esprit .add-esprit {
+	display: block;
+}
+.product-card:hover .product-esprit .esprit {
 	display: none;
 }
 
