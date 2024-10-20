@@ -4,22 +4,32 @@
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 /*UTILS*/
 .container {
 	margin: 0 auto;
-	padding: 0 10px;
 	width: 1000px;
 	max-width: 100%;
 }
 
 img {
 	max-width: 100%;
+	display: block;
 }
 
 li {
 	list-style-type: none;
 	display: inline-block;
-	padding-right: 15px;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
 }
 
 i {
@@ -36,17 +46,26 @@ i {
 }
 
 /*HEADER*/
-.header-container {
+
+.page-header {
 	background-color: rgb(255, 105, 0);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+}
+
+.header-container {
+	width: 1000px;
+	max-width: 100%;
 	height: 80px;
+	margin: 0 auto;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	padding: 0 110px;
 }
 
 .header-item {
-	color: white;
 	font-weight: bold;
 	font-size: 1.2rem;
 }
@@ -57,13 +76,13 @@ i {
 
 /*MAIN*/
 
-.products > .container {
+.products .container {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: center;
 	gap: 2rem;
-	margin: 50px auto;
+	margin: 120px auto 40px;
 }
 
 .products .product-card {
@@ -80,25 +99,28 @@ i {
 	margin-top: 5px;
 }
 
-.product-discount {
+.heart:hover {
+	color: red;
+}
+
+.scritte-immagini {
+	display: flex;
 	position: absolute;
-	bottom: 23%;
-	left: 0%;
-	background-color: red;
-	padding: 5px;
+	bottom: 16%;
 	color: white;
 	font-weight: bold;
+	font-size: 0.8rem;
+}
+
+.product-discount {
+	background-color: red;
+	padding: 5px;
+	margin-right: 10px;
 }
 
 .sostenibilità {
-	position: absolute;
-	bottom: 23%;
-	left: 16%;
 	background-color: green;
 	padding: 5px;
-	color: white;
-	font-size: 1rem;
-	font-weight: bold;
 }
 
 .costo {
@@ -115,12 +137,7 @@ i {
 	color: red;
 }
 
-.sostenibilità:only-child {
-	position: absolute;
-	bottom: 23%;
-	left: 0%;
-}
-
+/*LEVIS*/
 .product-card .product-levis .add-levis {
 	display: none;
 	background-image: url(../img/1b.webp);
@@ -135,6 +152,7 @@ i {
 	display: none;
 }
 
+/*GUESS*/
 .product-card .product-guess .guess-cart {
 	display: none;
 	background-image: url(../img/2b.webp);
@@ -149,6 +167,7 @@ i {
 	display: none;
 }
 
+/*PASTELLO*/
 .product-card .product-pastello .add-pastello {
 	display: none;
 	background-image: url(../img/3b.webp);
@@ -163,6 +182,7 @@ i {
 	display: none;
 }
 
+/*LEVIS-RED*/
 .product-card .product-levis-red .add-levis-red {
 	display: none;
 	background-image: url(../img/4b.webp);
@@ -177,6 +197,7 @@ i {
 	display: none;
 }
 
+/*MAYA*/
 .product-card .product-maya .add-maya {
 	display: none;
 	background-image: url(../img/5b.webp);
@@ -191,6 +212,7 @@ i {
 	display: none;
 }
 
+/*ESPRIT*/
 .product-card .product-esprit .add-esprit {
 	display: none;
 	background-image: url(../img/6b.webp);
@@ -206,13 +228,17 @@ i {
 }
 
 /*FOOTER*/
+.footer-section {
+	background-color: black;
+}
 
 .footer-container {
-	background-color: black;
-	height: 100px;
+	width: 1000px;
+	max-width: 100%;
+	padding: 30px 0;
+	margin: 0 auto;
 	display: flex;
-	justify-content: space-around;
-	padding: 30px 30px;
+	justify-content: space-between;
 }
 
 .footer-item {
@@ -223,4 +249,8 @@ i {
 .Boolando {
 	font-weight: bold;
 	font-size: 1.3rem;
+}
+
+.footer-nav a {
+	padding-right: 10px;
 }

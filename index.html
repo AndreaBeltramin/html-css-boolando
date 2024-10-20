@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/style.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -11,23 +10,37 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link rel="stylesheet" href="./css/style.css" />
+
 		<title>Document</title>
 	</head>
 	<body>
-		<header class="page.header">
-			<section class="header-section">
-				<div class="header-container">
-					<div class="header-item">Donna Uomo Bambini</div>
-					<div>
-						<img class="header-logo" src="./img/boolean-logo.png" alt="logo" />
-					</div>
-					<div class="header-item">
-						<i class="fa-regular fa-user"></i>
-						<i class="fa-regular fa-heart"></i>
-						<i class="fa-solid fa-bag-shopping"></i>
-					</div>
+		<header class="page-header">
+			<nav class="header-container">
+				<div class="header-item">
+					<ul>
+						<li><a href="#">Donna</a></li>
+						<li><a href="#">Uomo</a></li>
+						<li><a href="#">Bambini</a></li>
+					</ul>
 				</div>
-			</section>
+				<div>
+					<img class="header-logo" src="./img/boolean-logo.png" alt="logo" />
+				</div>
+				<div class="header-item">
+					<ul>
+						<li>
+							<a href="#"><i class="fa-regular fa-user"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa-regular fa-heart"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</header>
 		<main>
 			<section class="products">
@@ -38,9 +51,9 @@
 							<div class="add-levis"></div>
 						</div>
 						<i class="fa-solid fa-heart heart"></i>
-						<div>
+						<div class="scritte-immagini">
 							<div class="product-discount">-50%</div>
-							<h3 class="sostenibilità">Sostenibilità</h3>
+							<div class="sostenibilità">Sostenibilità</div>
 						</div>
 						<div class="product-description">
 							<div class="marca">Levi's</div>
@@ -57,7 +70,7 @@
 							<div class="guess-cart"></div>
 						</div>
 						<i class="fa-solid fa-heart heart"></i>
-						<div>
+						<div class="scritte-immagini">
 							<div class="product-discount">-30%</div>
 						</div>
 						<div class="product-description">
@@ -75,7 +88,7 @@
 							<div class="add-pastello"></div>
 						</div>
 						<i class="fa-solid fa-heart heart"></i>
-						<div>
+						<div class="scritte-immagini">
 							<div class="product-discount">-30%</div>
 						</div>
 						<div class="product-description">
@@ -93,9 +106,9 @@
 							<div class="add-levis-red"></div>
 						</div>
 						<i class="fa-solid fa-heart heart"></i>
-						<div>
+						<div class="scritte-immagini">
 							<div class="product-discount">-50%</div>
-							<h3 class="sostenibilità">Sostenibilità</h3>
+							<div class="sostenibilità">Sostenibilità</div>
 						</div>
 						<div class="product-description">
 							<div class="marca">Levi's</div>
@@ -124,8 +137,8 @@
 							<div class="add-esprit"></div>
 						</div>
 						<i class="fa-solid fa-heart heart"></i>
-						<div>
-							<h3 class="sostenibilità">Sostenibilità</h3>
+						<div class="scritte-immagini">
+							<div class="sostenibilità">Sostenibilità</div>
 						</div>
 						<div class="product-description">
 							<div class="marca">Esprit</div>
@@ -141,19 +154,32 @@
 				<div class="footer-container">
 					<div>
 						<div class="footer-item Boolando">Boolando s.r.l</div>
-						<ul class="footer-item">
-							<li>Informazioni legali</li>
-							<li>Informativa sulla privacy</li>
-							<li>Diritto di recesso</li>
+						<ul class="footer-item footer-nav">
+							<li><a href="#">Informazioni legali</a></li>
+							<li><a href="#">Informativa sulla privacy</a></li>
+							<li><a href="#">Diritto di recesso</a></li>
 						</ul>
 					</div>
 					<div>
 						<div class="footer-item">Trovaci anche su</div>
 						<div class="footer-item">
-							<i class="fa-brands fa-square-twitter"></i>
-							<i class="fa-brands fa-square-facebook"></i>
-							<i class="fa-brands fa-square-instagram"></i>
-							<i class="fa-brands fa-square-youtube"></i>
+							<ul>
+								<li>
+									<a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa-brands fa-square-pinterest"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
